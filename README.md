@@ -4,7 +4,7 @@
 
 ### 📋 TaskFlow란?
 
-<img width="250" alt="Intro" src="https://raw.githubusercontent.com/feralshining/Taskflow/main/resource/appIcon.png">
+<img width="250" alt="Intro" src="https://raw.githubusercontent.com/feralshining/Taskflow/main/assets/appIcon.png">
 
 > 일정 관리와 오늘의 할 일 관리를 위한 안드로이드 모바일 앱
 
