@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <!-- 전체 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 제목 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="할 일 추가"
+            android:textSize="20sp"
+            android:textColor="#1F2937"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 입력 창 -->
+        <EditText
+            android:id="@+id/todo_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="할 일을 입력해주세요!"
+            android:textSize="16sp"
+            android:textColor="#1F2937"
+            android:textColorHint="#9CA3AF"
+            android:padding="16dp"
+            android:background="@drawable/edittext_border"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5"
+            android:gravity="top|start"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 마감 기한 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="마감 기한"
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 마감 기한 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_my_calendar"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/deadline_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="날짜 선택"
+                android:textSize="16sp"
+                android:textColor="#1F2937"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <!-- 시간 선택 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="마감 시간"
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_recent_history"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="시간 선택"
+                android:textSize="16sp"
+                android:textColor="#1F2937"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <!-- 버튼 -->
+        <Button
+            android:id="@+id/add_btn_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="추가하기"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:backgroundTint="#6366F1" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

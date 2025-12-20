@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <!-- 전체 구조 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- 체크박스 -->
+        <CheckBox
+            android:id="@+id/todo_checkbox"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="14dp"
+            android:buttonTint="#6366F1" />
+
+        <!-- 할 일 레이아웃 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 할 일 제목 -->
+            <TextView
+                android:id="@+id/todo_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="할 일 내용"
+                android:textSize="16sp"
+                android:textColor="#1F2937"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- 마감기한 -->
+            <TextView
+                android:id="@+id/todo_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘"
+                android:textSize="12sp"
+                android:textColor="#9CA3AF"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- 편집 버튼 -->
+        <ImageButton
+            android:id="@+id/edit_button"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="편집"
+            app:tint="#9CA3AF"
+            android:scaleType="fitCenter"
+            android:padding="8dp" />
+
+        <!-- 삭제 버튼 -->
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="삭제"
+            app:tint="#EF4444"
+            android:scaleType="fitCenter"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,69 @@
+# IntelliJ / Android Studio 설정 파일
+/.idea/
+*.iml
+
+# Gradle 캐시 및 빌드 파일
+/.gradle/
+/.gradle
+
+# 빌드 출력 파일
+/build/
+/app/build/
+*.apk
+*.apks
+*.aab
+*.ap_
+
+# 네이티브 빌드 파일
+.externalNativeBuild/
+.cxx/
+
+# IDE 및 에디터 설정
+.vscode/
+out/
+
+# 환경 설정 및 로컬 설정 파일
+/local.properties
+local.properties
+key.properties
+
+# 키스토어 및 인증서 (민감정보)
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# Google / Firebase 설정 파일 (API 키 포함)
+google-services.json
+
+# 환경 변수 파일
+.env
+.env.*
+*.properties
+
+# 기타 파일
+/captures/
+*.log
+.DS_Store
+Thumbs.db
+
+# Kotlin/Java 컴파일 파일
+*.class
+*.dex
+*.so
+
+# APK 파일
+/app/release/
+
+# Lint 결과 파일
+lint-report.html
+lint-results.xml
+lint-baseline.xml
+
+# 자동 생성 파일
+/app/libs/
+gen/
+
+# Android Profiler 힙 덤프
+*.hprof
+

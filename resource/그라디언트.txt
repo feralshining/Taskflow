@@ -1,0 +1,20 @@
+1. 주요 색상 1 — 밝은 청록색 (상단 왼쪽)
+Hex: #86E3F9
+RGB: (134, 227, 249)
+느낌: Mint / Light Cyan
+
+2. 주요 색상 2 — 푸른 파랑 (중앙 영역)
+Hex: #4D80F6
+RGB: (77, 128, 246)
+느낌: Pure Blue / Soft Blue
+
+3. 주요 색상 3 — 보라빛 블루 (하단 영역)
+Hex: #7B5BFF
+RGB: (123, 91, 255)
+느낌: Blue-Violet
+
+4. 주요 색상 4 — 연보라·퍼플(가장 하단)
+Hex: #C47BFF
+RGB: (196, 123, 255)
+느낌: Light Purple / Lavender Gradient
+
